@@ -7,21 +7,7 @@
 }
 
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #10416b;
-}
-
-
-.flex-container > div {
-    background-color: #378ad8;
-    margin: 10px;
-    padding: 20px;
-    font-size: 15px;
-}
-
-.container {
+.main-container {
     display: flex;
     width: 80%;
     margin: 0 auto;
@@ -30,16 +16,19 @@
 .sidebar {
     width: 20%;
     padding: 10px;
-    margin: 0 10px
+    margin: 0 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     }
 
-.main-content {
+.home-center-content {
     width: 60%;
     padding: 10px;
     margin: 0 10px
     }
 
 .section {
+    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
 
@@ -51,10 +40,70 @@
 }
 
 
-.stack > div {
-    flex-direction: column;
+.updates-main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 10px;
     padding: 20px;
 }
+
+.center-section {
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+    
+.column-left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px;
+    flex-grow: 1; 
+    flex-shrink: 0; 
+
+}
+.column-left > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.column-right {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px;
+    flex-grow: 1; 
+    flex-shrink: 0; 
+
+}
+
+.column-right > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 15px;
+}
+
+
+.box {
+    background-color: #C3B7DD;
+    padding: 20px;
+    border: 2px solid #5E62A6;
+}
+        
+
+
+
+.about-container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    }
 
 
 .metrophobic-regular {
