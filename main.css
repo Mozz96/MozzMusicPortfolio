@@ -96,6 +96,11 @@
     border: 2px solid #5E62A6;
 }
         
+.portfolio-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    }
 
 
 
