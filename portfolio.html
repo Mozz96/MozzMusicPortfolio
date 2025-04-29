@@ -30,12 +30,111 @@
             <h1 class="changa-one-regular">Check out my previous works here!</h1>
             
         </div>
-        <div class="portfolio-container">
+        
+        <div class="carousel-container">
 
+            
+            <div class="mySlides fade">
+                <div class="numbertext changa-one-regular">1 / 9</div>
+                <img src="assets/photos/No Cause for Alarm Thumbnail.png" style="width:100%">
+                <div class="text changa-one-regular">Caption Text</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 9</div>
+                    <img src="assets/photos/Ebb And Flow Thumbnail.png" style="width:100%">
+                <div class="text changa-one-regular">Caption Two</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 9</div>
+                <img src="assets/photos/Where Did The Time Go Thumbnail.png" style="width:100%">
+                <div class="text changa-one-regular">Caption Three</div>
+            </div>
 
+            <div class="mySlides fade">
+                <div class="numbertext changa-one-regular">4 / 9</div>
+                <img src="assets/photos/Mayhem Thumbnail.png" style="width:100%">
+                <div class="text changa-one-regular">Caption Text</div>
+            </div>
 
+            <div class="mySlides fade">
+                <div class="numbertext changa-one-regular">5 / 9</div>
+                <img src="assets/photos/verdanttreesthumbnail.png" style="width:100%">
+                <div class="text changa-one-regular">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext changa-one-regular">6 / 9</div>
+                <img src="assets/photos/Time's End Thumbnail.png" style="width:100%">
+                <div class="text changa-one-regular">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext changa-one-regular">7 / 9</div>
+                <img src="assets/photos/Against All Odds, Let Loose! Thumbnail.png" style="width:100%">
+                <div class="text changa-one-regular">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext changa-one-regular">8 / 9</div>
+                <img src="assets/photos/Frostbite Thumbnail.png" style="width:100%">
+                <div class="text changa-one-regular">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext changa-one-regular">9 / 9</div>
+                <img src="assets/photos/Ethereal Groove Thumbnail.png" style="width:100%">
+                <div class="text changa-one-regular">Caption Text</div>
+            </div>
+        
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
         </div>
 
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
         
         
         <footer>
