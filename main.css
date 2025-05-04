@@ -19,6 +19,7 @@
     margin: 0 10px;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
     }
 
 .home-center-content {
@@ -223,6 +224,21 @@ table {
     width: 80%;
     margin: 0 auto;
 }
+
+.about-center-content {
+    width: 60%;
+    padding: 10px;
+    margin: 0 10px
+}
+
+.about-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+
+}
+
 
 
 /* Fonts start here */
