@@ -11,6 +11,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Metrophobic&family=Monoton&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+        <script>
+        $( function() {
+            $( "#tabs" ).tabs();
+        } );
+        </script>
     </head>
     <body>
         <header class="monoton-regular">
@@ -26,9 +35,9 @@
                 <li class="changa-one-regular"><a href="aboutme.html">About/Contact Me</a></li>    
             </ul>     
         </nav>
-        <div class="center-section">
-            <h1 class="changa-one-regular">Check out my previous works here!</h1>
-            
+        <div class="portfolio-center-section">
+            <h1 class="changa-one-regular">Check out my previous works here!</h1><br>
+            <p class="metrophobic-regular">Here you can check out my discography, </p><br>
         </div>
         
         <div class="carousel-container">
@@ -37,55 +46,55 @@
             <div class="mySlides fade">
                 <div class="numbertext changa-one-regular">1 / 9</div>
                 <img src="assets/photos/No Cause for Alarm Thumbnail.png" style="width:100%">
-                <div class="text changa-one-regular">Caption Text</div>
+                <div class="text changa-one-regular">"No Cause For Alarm"</div>
             </div>
         
             <div class="mySlides fade">
                 <div class="numbertext">2 / 9</div>
                     <img src="assets/photos/Ebb And Flow Thumbnail.png" style="width:100%">
-                <div class="text changa-one-regular">Caption Two</div>
+                <div class="text changa-one-regular">"Ebb and Flow"</div>
             </div>
         
             <div class="mySlides fade">
                 <div class="numbertext">3 / 9</div>
                 <img src="assets/photos/Where Did The Time Go Thumbnail.png" style="width:100%">
-                <div class="text changa-one-regular">Caption Three</div>
+                <div class="text changa-one-regular">"Where Did The Time Go?"</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext changa-one-regular">4 / 9</div>
                 <img src="assets/photos/Mayhem Thumbnail.png" style="width:100%">
-                <div class="text changa-one-regular">Caption Text</div>
+                <div class="text changa-one-regular">"Mayhem!"</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext changa-one-regular">5 / 9</div>
                 <img src="assets/photos/verdanttreesthumbnail.png" style="width:100%">
-                <div class="text changa-one-regular">Caption Text</div>
+                <div class="text changa-one-regular">"Verdant Trees, Shining Beacon"</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext changa-one-regular">6 / 9</div>
                 <img src="assets/photos/Time's End Thumbnail.png" style="width:100%">
-                <div class="text changa-one-regular">Caption Text</div>
+                <div class="text changa-one-regular">"Time's End"</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext changa-one-regular">7 / 9</div>
                 <img src="assets/photos/Against All Odds, Let Loose! Thumbnail.png" style="width:100%">
-                <div class="text changa-one-regular">Caption Text</div>
+                <div class="text changa-one-regular">"Against All Odds, Let Loose!"</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext changa-one-regular">8 / 9</div>
                 <img src="assets/photos/Frostbite Thumbnail.png" style="width:100%">
-                <div class="text changa-one-regular">Caption Text</div>
+                <div class="text changa-one-regular">"Frostbite"</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext changa-one-regular">9 / 9</div>
                 <img src="assets/photos/Ethereal Groove Thumbnail.png" style="width:100%">
-                <div class="text changa-one-regular">Caption Text</div>
+                <div class="text changa-one-regular">"Ethereal Groove"</div>
             </div>
         
             
@@ -135,6 +144,64 @@
             dots[slideIndex-1].className += " active";
             }
         </script>
+        <br>
+        <div class="portfolio-section">
+            <h1 class="changa-one-regular">Click a tab to learn more about a piece:</h1><br>
+            <div id="tabs">
+                <ul>
+                  <li><a href="#tabs-1">No Cause for Alarm</a></li>
+                  <li><a href="#tabs-2">Ebb and Flow</a></li>
+                  <li><a href="#tabs-3">Where Did The Time Go?</a></li>
+                  <li><a href="#tabs-4">Mayhem!</a></li>
+                  <li><a href="#tabs-5">Verdant Trees, Shining Beacon</a></li>
+                  <li><a href="#tabs-6">Time's End</a></li>
+                  <li><a href="#tabs-7">Against All Odds, Let Loose!</a></li>
+                  <li><a href="#tabs-8">Frostbite</a></li>
+                  <li><a href="#tabs-9">Ethereal Groove</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <h2 class="changa-one-regular">No Cause For Alarm</h2><br>
+                    <p class="metrophobic-regular">Originating from a demo recorded in 2021, No Cause for Alarm was both my first piece fully completed, and my first piece uploaded publicly. Created in Cakewalk by Bandlabs, this piece has a steady percussion beat heavy with bass drum, a catchy piano hook, and a vibrant Latin feel that permeates throughout. Despite being rough around the edges, I'm still proud of it, as it was my first real step into music composition!</p><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/O3Fp0jGANMg?si=pdKjO5kWFC5zVo5C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div id="tabs-2">
+                    <h2 class="changa-one-regular">Ebb and Flow - The Calm Coastal Village</h2><br>
+                    <p class="metrophobic-regular">Composed in February 2023, Ebb and Flow was my very first piece composed in FL Studio! My goal with this one was to make a calm piece based on a small village by the ocean, waves gently crashing on its shores. The song features a slow and calming tempo, with multiple pianos layering on one another to create a soothing atmosphere. As my first piece in FL Studio, it still remains one of my favorites, as learning to write calmer atmospheric pieces is important to any musical toolset.</p><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/58yJBdMMVZE?si=k3MqthcTej8mAffx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div id="tabs-3">
+                    <h2 class="changa-one-regular">Where Did The Time Go? - Reflection on a Lost Civilization</h2><br>
+                    <p class="metrophobic-regular">Composed in March 2023, Where Did The Time Go was a smaller piece composed as the exploration theme for ancient ruins of a long-gone civilization. The song features 3 pianos, one playing a constant loop while the other two play complementary of one another. The slow, somber melody carries a bittersweet feeling throughout, like something significant was once there but is long gone. At the time, I was focusing more on slower, more pensive pieces; although it seems more straightforward than my previous piece Ebb and Flow, I learned more in-depth about how to use a single instrument to create complex harmonies.</p><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/y7J7XtizVU4?si=6GYtmHd-mMMtOZzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div id="tabs-4">
+                    <h2 class="changa-one-regular">Mayhem! - Holding Fast in the Heart of the Maelstrom</h2><br>
+                    <p class="metrophobic-regular">Composed in June 2023, Mayhem was written as a bombastic piece about a battle taking place in the eye of a raging twister! It features 2 pianos working in tandem, a beefy bass guitar playing several funky riffs, and a drum set going all out to create a rocking sound. Meant to break a case of writer's block, this piece taught me the importance of switching up genres and break free from my comfort zone, while also teaching me to experiment with new instruments!</p><br>
+                </div>
+                <div id="tabs-5">
+                    <h2 class="changa-one-regular">Verdant Trees, Shining Beacon - Taiga Castle Mini-Suite</h2><br>
+                    <p class="metrophobic-regular">Composed in July 2023, Verdant Trees, Shining Beacon was my first collaborative piece! Co-written with my brother, who goes by RC in the music/online space; in the links below I've included the link to his YouTube channel, as he and I worked hard together to get this piece done. The setting of this piece is of a cold and green forest, the listener being taken on a journey to a castle hidden in the midst of this strange yet exciting land, the piano and strings come together to create a sense of wonder and whimsy!</p><br>
+                </div>
+                <div id="tabs-6">
+                    <h2 class="changa-one-regular">Time's End - Final Echoes of a Proud Civilization</h2><br>
+                    <p class="metrophobic-regular">Composed in August 2023, Time's End is a prequel to one of my previous pieces, "Where Did The Time Go?" The song is more fast-paced and serious in tone, the dual pianos and strings telling the story of a heroic warrior defending his homeland. The song not only retains several leitmotifs from the original, it also expands upon it with an emotional string accompaniment and new sections that add more depth to the story of that original piece.</p><br>
+                </div>
+                <div id="tabs-7">
+                    <h2 class="changa-one-regular">Against All Odds, Let Loose! - A Mini Piano Medley</h2><br>
+                    <p class="metrophobic-regular">Composed in September 2023, this piece is an energetic piano medley originating from a piano riff that's been in my head since 2013, 10 years in the making. The song comprises of three pianos, each playing a different part while also being complementary of one another; the fast tempo and riffing pianos both come together to create a fun, playful, and exciting atmosphere reminiscent of a big battle against the odds!</p><br>
+                </div>
+                <div id="tabs-8">
+                    <h2 class="changa-one-regular">Frostbite - The Underground Fortress of Ice</h2><br>
+                    <p class="metrophobic-regular">Composed in October 2023, Frostbite originated from an incomplete demo from late 2022, back when I was still working in Cakewalk. My original goal for this piece was a slow waltz, but the completed piece instead became an exploration theme for an ancient fortress of ice! The song still retains the slow waltz in the beginning, a lone piano and strings taking the lead until the tempo quickens to become more foreboding yet playful, drums and additional piano joining in to add additional depth.</p><br>
+                </div>
+                <div id="tabs-9">
+                    <h2 class="changa-one-regular">Ethereal Groove - Battle on the Neon Superhighway</h2><br>
+                    <p class="metrophobic-regular">Composed in October 2023 from a 5-second piano loop, Ethereal Groove was originally meant to be a generic battle theme; however, as the project progressed, the premise shifted to that of a cyberpunk boss. The piece features both traditional and electronic elements, the piano loop ever-present while every electronic instrument makes their entrance one at a time, resulting in a groovy and fast-paced beat that gets the listener in the zone!</p><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KQtaPHBy19A?si=c_Z9WGlDoKtOIyNa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+
+        </div>
         
         
         <footer>
